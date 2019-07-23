@@ -1,53 +1,4 @@
 <!DOCTYPE html>
-
-<html>
-	<head>
-		<!--Info about the page-->
-		<link rel="stylesheet" href="Activ8.css">
-		<script src="Activ8.js"></script>
-		<link rel="stylesheet" href="imgsliderA8style.css">
-		<title>Activ8</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-	<style>
-	.dropbtn {
-	background-color: #3498DB;
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	}
-
-	.dropbtn:hover, .dropbtn:focus {
-	background-color: #2980B9;
-	}
-
-	.dropdown {
-	position: relative;
-	display: inline-block;
-	}
-
-	.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	overflow: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	}
-
-	.dropdown-content a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	}
-
-	.dropdown a:hover {background-color: #ddd;}<!DOCTYPE html>
-
 <html>
 	<head>
 		<!--Info about the page-->
@@ -67,16 +18,13 @@
 	border: none;
 	cursor: pointer;
 	}
-
 	.dropbtn:hover, .dropbtn:focus {
 	background-color: #2980B9;
 	}
-
 	.dropdown {
 	position: relative;
 	display: inline-block;
 	}
-
 	.dropdown-content {
 	display: none;
 	position: absolute;
@@ -86,27 +34,24 @@
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	}
-
 	.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	}
-
 	.dropdown a:hover {background-color: #ddd;}
-
 	.show {display: block;}
-
 	</style>
 
 	</head>
 	<body>
 		<!--Content seen on the page-->
-		<h1>*INSERTLOGO*
+		<h1><img src="logo.jpg">
 		<p> </p>
-   <button onclick="myFunction()" class="dropbtn"> <i class='fas fa-heart' style='font-size:48px;color:red'></i>'>&#xf004';</i>  </button>
+  <button onclick="myFunction()" class="dropbtn"> <i class='fas fa-heart' style='font-size:48px;color:pink'></i>&#xf004;</i></button>
   <div id="myDropdown" class="dropdown-content">
+  
 	<a href="Activ8.html">Home</a>
 	<a href="...!..html">Body Type</a>
 	<a href="..!...html">Nutrition</a>
@@ -130,7 +75,6 @@
 	  document.getElementById(pageName).style.display = "block";
 	  elmnt.style.backgroundColor = color;
 	}
-
 	// Get the element with id="defaultOpen" and click on it
 	document.getElementById("defaultOpen").click();
 	</script>
@@ -141,7 +85,6 @@ toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -186,44 +129,37 @@ window.onclick = function(event) {
 						arrowLeft = document.querySelector('#arrow-left'),
 						arrowRight = document.querySelector('#arrow-right'),
 						current = 0;
-
 					function reset(){
 						for(let i = 0; i < sliderImages.length; i++){
 							sliderImages[i].style.display = 'none';
 						}
 					}
-
 					function startSlide(){
 						reset();
 						sliderImages[0].style.display = 'block';
 					}
-
 					function slideLeft(){
 						reset();
 						sliderImages[current - 1].style.display = 'block';
 						current--;
 					}
-
 					function slideRight(){
 						reset();
 						sliderImages[current + 1].style.display = 'block';
 						current++;
 					}
-
 					arrowLeft.addEventListener('click', function(){
 						if(current === 0){
 							current = sliderImages.length;
 					}
 					slideLeft();
 					});
-
 					arrowRight.addEventListener('click', function(){
 						if(current === sliderImages.length - 1){
 							current = -1
 					}
 					slideRight();
 					});
-
 					startSlide();
 				</script>
 		</p>
@@ -234,147 +170,3 @@ window.onclick = function(event) {
 
 	</body>
 
-</html>
-
-
-	.show {display: block;}
-
-	</style>
-
-	</head>
-	<body>
-		<!--Content seen on the page-->
-		<h1>*INSERTLOGO*
-		<p> </p>
-<button style='font-size:24px'> <i class='fas fa-heart'></i></button>
-		<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">      </button>
-  <div id="myDropdown" class="dropdown-content">
-	<a href="Activ8.html">Home</a>
-	<a href="...!..html">Body Type</a>
-	<a href="..!...html">Nutrition</a>
-	<a href="..!...html">Diet</a>
-	<a href="...!..html">More</a>
-	<a href="...!..html">Map</a>
-  </div>
-</div>
-
-<script>
-	function openPage(pageName),elmnt,color) {
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-	    tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablink");
-	  for (i = 0; i < tablinks.length; i++) {
-	    tablinks[i].style.backgroundColor = "";
-	  }
-	  document.getElementById(pageName).style.display = "block";
-	  elmnt.style.backgroundColor = color;
-	}
-
-	// Get the element with id="defaultOpen" and click on it
-	document.getElementById("defaultOpen").click();
-	</script>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-</div>
-</h1>
-		<h2>...</h2>
-		<p>
-			<div class="wrap">
-				<div id="arrow-left" class="arrow"></div>
-				<div id="slider">
-					<div class="slide slide1">
-						<div class="slide-content">
-							<span>image1</span>
-						</div>
-					</div>
-					<div class="slide slide2">
-						<div class="slide-content">
-							<span>image2</span>
-						</div>
-					</div>
-					<div class="slide slide3">
-						<div class="slide-content">
-							<span>image3</span>
-						</div>
-					</div>
-				</div>
-					<div id="arrow-right" class="arrow"></div>
-
-				<script>
-						let sliderImages = document.querySelectorAll('.slide'),
-						arrowLeft = document.querySelector('#arrow-left'),
-						arrowRight = document.querySelector('#arrow-right'),
-						current = 0;
-
-					function reset(){
-						for(let i = 0; i < sliderImages.length; i++){
-							sliderImages[i].style.display = 'none';
-						}
-					}
-
-					function startSlide(){
-						reset();
-						sliderImages[0].style.display = 'block';
-					}
-
-					function slideLeft(){
-						reset();
-						sliderImages[current - 1].style.display = 'block';
-						current--;
-					}
-
-					function slideRight(){
-						reset();
-						sliderImages[current + 1].style.display = 'block';
-						current++;
-					}
-
-					arrowLeft.addEventListener('click', function(){
-						if(current === 0){
-							current = sliderImages.length;
-					}
-					slideLeft();
-					});
-
-					arrowRight.addEventListener('click', function(){
-						if(current === sliderImages.length - 1){
-							current = -1
-					}
-					slideRight();
-					});
-
-					startSlide();
-				</script>
-		</p>
-
-		<h3>Our Goal</h3>
-
-		<h3>About Us</h3>
-
-	</body>
-
-</html>
