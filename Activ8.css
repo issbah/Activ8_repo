@@ -1,0 +1,32 @@
+.goal-color{
+  color: blue;
+}
+.about-color{
+  color: orange;
+}
+
+.goal{
+  width: 20%;
+  float: left;
+}
+
+.goal-text{
+  width: 30%;
+  float: left;
+}
+
+.goal-text-1{
+  width: 30%;
+}
+
+.about{
+  width:20%;
+  float: left;
+}
+.about-text{
+  width: 30%;
+  float: left;
+}
+.about-text-1{
+  width: 30%;
+}
