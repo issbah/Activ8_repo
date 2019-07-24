@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="activ8.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Comic Sans MS;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffccdd;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffe6ee ;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 135%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 130%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffb3cc;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+	<div>
+		<img class="picture" src="bt.jpg">
+	</div>
+	<div class="topnav" id="myTopnav">
+  <a href="#Home" class="active">Home</a>
+  <a href="#Body Type">BodyType</a>
+  <a href="#Nutrition">Nutrition</a>
+  <a href="#Diet">Diet</a>
+	<a href="#More">More</a>
+	<a href="#Maps">Maps</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<div class="container">
+  <img src="picbt.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Everyone has a diffrent Body Type and each person should embrace their own. This page will help you gain more knowlege on body type. At the end, take the quiz to find out your's! &#128522</div>
+  </div>
+</div>
+<div class="Header">
+	<div class="bottom">
+			<div class="goal">
+				<h3 class="goal-color">WHY IT MATTERS:</h3>
+			</div>
+			<div class="goal-text">
+				<p class="goal-text-1">When it comes to getting the best results, knowing what type of body type you have can make a big difference. Understanding your body type will help you fine-tune both training and nutrition to focus on what works best for you and maximize your progress.
+
+			</div>
+			<div class="about">
+				<h3 class="about-color">BACKGROUND:</h3>
+			</div>
+			<div class="about-text">
+				<p class="about-text-1"><p>There are mainly three different body types → Ectomorph, Mesomorph and Endomorph. Starting with Ectomorph, they are naturally skinny and gaining weight for them can become hard and they also seem to have a “fast metabolism”. However, eating the correct foods will help them reach their goals faster. Second, Mesomorphs are really athletic looking and their metabolism works like a charm. For this body type, fitness comes naturally but can be difficult to maintain, so attaching themselves to healthy habits is a great solution for them. Lastly, Endomorphs are naturally bigger and losing fat for them can be a struggle but with the right amount of training and nutrition, anything is possible.
+
+			</div>
+		</div>
+
+</div>
+
+<div class="haha">
+ <img src="link1.jpg" alt="Trulli" width="1250" height="433">
+</div>
+
+<div class="lol">
+	<p>
+												<a href="https://vshred.com/sp/survey/survey-aka1/?utm_source=google&utm_medium=cpc&utm_campaign=kendago&utm_content=ga1&aff=973063812&ad=40&gclid=CjwKCAjwg-DpBRBbEiwAEV1_-DQpj04LU87zZ7wnwH5rVY8c6RqBKqhg-0tSW4KySHMMmsmn1AtSHRoC8EkQAvD_BwE#">CLICK ME AND I WILL DIRECT YOU TO A "FIND OUT YOUR BODY TYPE QUIZ</a>
+	</p>
+
+</div>
+</body>
+</html>

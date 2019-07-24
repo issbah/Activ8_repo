@@ -1,0 +1,59 @@
+.picture{
+  display: block;
+  margin-left: 34%;
+  margin-right: 70%;
+  width: 30%;%
+
+
+}
+
+.container{
+  display: block;
+  margin-left: 17%;
+  margin-right: 50%;
+  width: 40%;
+}
+.text{
+  color: blue;
+}
+
+.Header{
+  color: black;
+  font-family: Courier New;
+  background-color: pink
+}
+.about{
+  color: black
+}
+
+.goal{
+  color:black
+}
+
+
+.goal-text-1{
+  width: 50%
+  float:left;
+  text-indent: 2.0em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 30px;
+  border: 3px solid;
+}
+
+.about-text{
+  width: 30%
+  float: right;
+  text-indent: 2.0em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 30px;
+  border: 3px solid;
+}
+
+
+.lol{
+  color: blue;
+}
