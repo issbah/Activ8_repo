@@ -8,59 +8,12 @@
 		<title>Activ8</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-	<style>
-	.dropbtn {
-	background-color: white;
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	}
-	.dropbtn:hover, .dropbtn:focus {
-	background-color: white;
-	}
-	.dropdown {
-	position: relative;
-	display: inline-block;
-	}
-	.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	overflow: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	}
-	.dropdown-content a {
-	color: pink;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	}
-	.dropdown a:hover {background-color: #ddd;}
-	.show {display: block;}
-
-	</style>
 
 	</head>
 	<body>
 		<!--Content seen on the page-->
 		<center><h1><img src="logo.jpg">
 		<p> </p>
-  <button onclick="myFunction()" class="dropbtn"> <i class='fas fa-heart' style='font-size:48px;color:pink'></i>&#xf004;</i></button>
-  <div id="myDropdown" class="dropdown-content" style="float:center">
-  
-	<a href="Activ8.html">Home</a>
-	<a href="...!..html">Body Type</a>
-	<a href="..!...html">Nutrition</a>
-	<a href="..!...html">Diet</a>
-	<a href="...!..html">More</a>
-	<a href="...!..html">Map</a>
-  </div>
-</div>
 
 <script>
 	function openPage(pageName),elmnt,color) {
@@ -80,30 +33,10 @@
 	document.getElementById("defaultOpen").click();
 	</script>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 </div>
 </h1>
 </center>
-		<h2>...</h2>
+		<h2> Menu </h2>
 		<p>
 			<div class="wrap">
 				<div id="arrow-left" class="arrow"></div>
@@ -166,8 +99,21 @@ window.onclick = function(event) {
 				</script>
 		</p>
 
-		<h3>Our Goal</h3>
+		<div class="bottom">
+			<div class="goal">
+				<h3 class="goal-color">Our Goal:</h3>
+			</div>
+			<div class="goal-text">
+				<p class="goal-text-1">dgfkjdshk jfhsadjhsa luhkbfkasi urbkcbvkabdsfkhahsdf hafeskd bksbd ak</p>
 
-		<h3>About Us</h3>
+			</div>
+			<div class="about">
+				<h3 class="about-color">About Us:</h3>
+			</div>
+			<div class="about-text">
+				<p class="about-text-1"><p>We are three high school girls who are using our coding skills to make a diffence in this world. We graduated from the Girls Who Code Summer Immersion Program in the summer of 2019. We are intent on spreading knowledge and resources about healthy lifestyles to assist everyone with living a healthier and happier life.</p>
+			</div>
+		</div>
+
 
 	</body>
