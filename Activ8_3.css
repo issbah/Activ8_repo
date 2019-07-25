@@ -1,0 +1,13 @@
+.center{
+  /* margin-left: 30%; */
+  margin: auto;
+  display: block;
+}
+
+h1{
+  color:#77dd77;
+}
+
+.content{
+  margin: auto;
+}
