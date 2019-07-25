@@ -15,9 +15,14 @@ body, #slider, .wrap, .slide-content{
 		background-repeat: no-repeat;
 }
 
-// .slide1{background-image: url('....jpg')}
-// .slide2{background-image: url('....jpg')}
-// .slide3{background-image: url('....jpg')}
+.slide1{background-image: url('a81.jpg')}
+.slide2{background-image: url('a82.jpg')}
+.slide3{background-image: url('a83.jpg')}
+.slide4{background-image: url('a84.jpg')}
+.slide5{background-image: url('a85.jpg')}
+.slide6{background-image: url('a86.jpg')}
+.slide7{background-image: url('a87.jpg')}
+.slide8{background-image: url('a88.jpg')}
 
 
 .slide-content{
