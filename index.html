@@ -5,133 +5,73 @@
 		<link rel="stylesheet" href="Activ8.css">
 		<script src="Activ8.js"></script>
 		<link rel="stylesheet" href="imgsliderA8style.css">
-		<title>Activ8</title>
+		<link rel="stylesheet" href="Navbar.css">
+		<script type="text/javascript" src="Navbar.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
-		<style>
-				body {
-				  margin: 0;
-				  font-family: Arial, Helvetica, sans-serif;
-				}
-				.topnav {
-				  overflow: hidden;
-				  background-color: #ffccdd;
-				}
-				.topnav a {
-				  float: left;
-				  display: block;
-				  color: #f2f2f2;
-				  text-align: center;
-				  padding: 14px 16px;
-				  text-decoration: none;
-				  font-size: 17px;
-				}
-				.topnav a:hover {
-				  background-color: pink;
-				  color: black;
-				}
-				.topnav a.active {
-				  background-color: #ffe6ee ;
-				  color: black;
-				}
-				.topnav .icon {
-				  display: none;
-				}
-				@media screen and (max-width: 500px) {
-				  .topnav a:not(:first-child) {display: none;}
-				  .topnav a.icon {
-				    float: right;
-				    display: block;
-				  }
-				}
-				@media screen and (max-width: 100px) {
-				  .topnav.responsive {position: relative;}
-				  .topnav.responsive .icon {
-				    position: absolute;
-				    right: 0;
-				    top: 0;
-				  }
-				  .topnav.responsive a {
-				    float: none;
-				    display: block;
-				    text-align: left;
-				  }
-				}
-				</style>
+			<title>Activ8</title>
 	</head>
 	<body>
 		<!--Content seen on the page-->
-		<center><h1><img src="A8logo.jpg">
-		<p> </p>
-		<center>
+		<div>
+			<img class="center" src="A8logo.jpg">
+		</div>
+
 		<div class="topnav" id="myTopnav">
 	  <a href="index.html" class="active">Home</a>
-	  <a href="#Body Type">BodyType</a>
-	  <a href="nutrition.html">Nutrition</a>
+	  <a href="bodytype.html">BodyType</a>
+	  <a href="Activ8_3.html">Nutrition</a>
 	  <a href="#Diet">Diet</a>
 		<a href="#Exercises">Exercises</a>
 		<a href="#More">More</a>
 		<a href="#Maps">Maps</a>
 	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		</center>
 	    <i class="fa fa-bars"></i>
 	  </a>
 	</div>
 
-	<div style="padding-left:16px">
-
-	</div>
-
-	<script>
-	function myFunction() {
-	  var x = document.getElementById("myTopnav");
-	  if (x.className === "topnav") {
-	    x.className += " responsive";
-	  } else {
-	    x.className = "topnav";
-	  }
-	}
-	</script>
-
-<script>
-	function openPage(pageName),elmnt,color) {
-	  var i, tabcontent, tablinks;
-	  tabcontent = document.getElementsByClassName("tabcontent");
-	  for (i = 0; i < tabcontent.length; i++) {
-	    tabcontent[i].style.display = "none";
-	  }
-	  tablinks = document.getElementsByClassName("tablink");
-	  for (i = 0; i < tablinks.length; i++) {
-	    tablinks[i].style.backgroundColor = "";
-	  }
-	  document.getElementById(pageName).style.display = "block";
-	  elmnt.style.backgroundColor = color;
-	}
-	// Get the element with id="defaultOpen" and click on it
-	document.getElementById("defaultOpen").click();
-	</script>
-
-</div>
-</h1>
-</center><h3> </h3>
 		<p>
 			<div class="wrap">
 				<div id="arrow-left" class="arrow"></div>
 				<div id="slider">
 					<div class="slide slide1">
 						<div class="slide-content">
-							<span>image1</span>
+							<span></span>
 						</div>
 					</div>
 					<div class="slide slide2">
 						<div class="slide-content">
-							<span>image2</span>
+							<span></span>
 						</div>
 					</div>
 					<div class="slide slide3">
 						<div class="slide-content">
-							<span>image3</span>
+							<span></span>
 						</div>
+					</div>
+					<div class="slide slide4">
+						<div class="slide-content">
+							<span></span>
+						</div>
+					</div>
+					<div class="slide slide5">
+						<div class="slide-content">
+							<span></span>
+						</div>
+					</div>
+				</div><div class="slide slide6">
+					<div class="slide-content">
+						<span></span>
+					</div>
+				</div>
+				<div class="slide slide7">
+					<div class="slide-content">
+						<span></span>
+					</div>
+				</div>
+				<div class="slide slide8">
+					<div class="slide-content">
+						<span></span>
 					</div>
 				</div>
 					<div id="arrow-right" class="arrow"></div>
@@ -141,37 +81,44 @@
 						arrowLeft = document.querySelector('#arrow-left'),
 						arrowRight = document.querySelector('#arrow-right'),
 						current = 0;
+
 					function reset(){
 						for(let i = 0; i < sliderImages.length; i++){
 							sliderImages[i].style.display = 'none';
 						}
 					}
+
 					function startSlide(){
 						reset();
 						sliderImages[0].style.display = 'block';
 					}
+
 					function slideLeft(){
 						reset();
 						sliderImages[current - 1].style.display = 'block';
 						current--;
 					}
+
 					function slideRight(){
 						reset();
 						sliderImages[current + 1].style.display = 'block';
 						current++;
 					}
+
 					arrowLeft.addEventListener('click', function(){
 						if(current === 0){
 							current = sliderImages.length;
 					}
 					slideLeft();
-					});
+				});
+
 					arrowRight.addEventListener('click', function(){
 						if(current === sliderImages.length - 1){
 							current = -1
 					}
 					slideRight();
-					});
+				});
+
 					startSlide();
 				</script>
 		</p>
@@ -191,6 +138,5 @@
 				<p class="about-text-1"><p>We are three high school girls who are using our coding skills to make a diffence in this world. We graduated from the Girls Who Code Summer Immersion Program in the summer of 2019. We are intent on spreading knowledge and resources about healthy lifestyles to assist everyone with living a healthier and happier life.</p>
 			</div>
 		</div>
-
 
 	</body>
