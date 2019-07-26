@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--Info about the page-->
-		<link rel="stylesheet" href="Activ8.css">
-		<script src="Activ8.js"></script>
-		<link rel="stylesheet" href="imgsliderA8style.css">
 		<link rel="stylesheet" href="Navbar.css">
 		<script type="text/javascript" src="Navbar.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<!-- <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type"> -->
+		<link rel="stylesheet" href="Activ8.css">
 			<title>Activ8</title>
 	</head>
 	<body>
 		<!--Content seen on the page-->
 		<div>
-			<img class="center" src="A8logo.jpg">
+			<center><img class="center" src="A8logo.jpg"></center>
 		</div>
 
 		<div class="topnav" id="myTopnav">
-	  <a href="index.html" class="active">Home</a>
+	  <a href="Activ8.html" class="active">Home</a>
 	  <a href="bodytype.html">BodyType</a>
 	  <a href="Activ8_3.html">Nutrition</a>
 	  <a href="#Diet">Diet</a>
@@ -30,98 +27,20 @@
 	  </a>
 	</div>
 
-		<p>
-			<div class="wrap">
-				<div id="arrow-left" class="arrow"></div>
-				<div id="slider">
-					<div class="slide slide1">
-						<div class="slide-content">
-							<span></span>
-						</div>
-					</div>
-					<div class="slide slide2">
-						<div class="slide-content">
-							<span></span>
-						</div>
-					</div>
-					<div class="slide slide3">
-						<div class="slide-content">
-							<span></span>
-						</div>
-					</div>
-					<div class="slide slide4">
-						<div class="slide-content">
-							<span></span>
-						</div>
-					</div>
-					<div class="slide slide5">
-						<div class="slide-content">
-							<span></span>
-						</div>
-					</div>
-				</div><div class="slide slide6">
-					<div class="slide-content">
-						<span></span>
-					</div>
-				</div>
-				<div class="slide slide7">
-					<div class="slide-content">
-						<span></span>
-					</div>
-				</div>
-				<div class="slide slide8">
-					<div class="slide-content">
-						<span></span>
-					</div>
-				</div>
-					<div id="arrow-right" class="arrow"></div>
+	<div class="w3-content w3-section">
+	  <img class="mySlides" src="a81.jpg">
+	  <img class="mySlides" src="a82.jpg">
+	  <img class="mySlides" src="a83.jpg">
+		<img class="mySlides" src="a84.jpg">
+	  <img class="mySlides" src="a85.jpg">
+	  <img class="mySlides" src="a86.jpg">
+		<img class="mySlides" src="a87.jpg">
+	  <img class="mySlides" src="a88.jpg">
+	  <img class="mySlides" src="a89.jpg">
+	</div>
 
-				<script>
-						let sliderImages = document.querySelectorAll('.slide'),
-						arrowLeft = document.querySelector('#arrow-left'),
-						arrowRight = document.querySelector('#arrow-right'),
-						current = 0;
-
-					function reset(){
-						for(let i = 0; i < sliderImages.length; i++){
-							sliderImages[i].style.display = 'none';
-						}
-					}
-
-					function startSlide(){
-						reset();
-						sliderImages[0].style.display = 'block';
-					}
-
-					function slideLeft(){
-						reset();
-						sliderImages[current - 1].style.display = 'block';
-						current--;
-					}
-
-					function slideRight(){
-						reset();
-						sliderImages[current + 1].style.display = 'block';
-						current++;
-					}
-
-					arrowLeft.addEventListener('click', function(){
-						if(current === 0){
-							current = sliderImages.length;
-					}
-					slideLeft();
-				});
-
-					arrowRight.addEventListener('click', function(){
-						if(current === sliderImages.length - 1){
-							current = -1
-					}
-					slideRight();
-				});
-
-					startSlide();
-				</script>
-		</p>
+	<script type='text/javascript' src="stest.js"></script>
+	<script type='text/javascript'>window.setTimeout(carousel,4000);</script>
 
 		<div class="bottom">
 			<div class="goal">
