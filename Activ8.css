@@ -1,3 +1,7 @@
+.welcome-color{
+  color:pink;
+}
+
 .goal-color{
   color: pink;
 }
@@ -13,6 +17,7 @@
 .goal-text{
   width: 30%;
   float: left;
+  background-color: pink;
 }
 
 .goal-text-1{
@@ -26,7 +31,14 @@
 .about-text{
   width: 30%;
   float: left;
+  background-color: pink;
 }
 .about-text-1{
   width: 30%;
+}
+
+.mySlides{
+  width:80%;
+  height:40%;
+  margin-left: 10%;
 }
