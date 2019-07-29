@@ -1,0 +1,25 @@
+h1{
+  color:mediumorchid;
+  background:purple;
+  font-family: Comic Sans MS;
+}
+
+h2{
+  color:blue;
+}
+
+.events{
+  background:#21F5F3
+}
+
+.suggestions{
+  background:#74FF77
+}
+
+.food{
+  background:#FFFF66
+}
+
+.map{
+  background:#F7CD70
+}
